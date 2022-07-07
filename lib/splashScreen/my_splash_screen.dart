@@ -1,6 +1,8 @@
 import 'dart:async';
 
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:try_my_meal_user/authScreens/auth_screen.dart';
 import 'package:try_my_meal_user/mainScreens/home_screen.dart';
 
 
@@ -18,7 +20,15 @@ class _MySplashScreenState extends State<MySplashScreen>
   {
     Timer(const Duration(seconds: 4), () async
     {
-      Navigator.push(context, MaterialPageRoute(builder: (c)=> HomeScreen()));
+      //user is already logged-in
+      if(FirebaseAuth.instance.currentUser != null)
+      {
+        Navigator.push(context, MaterialPageRoute(builder: (c)=> HomeScreen()));
+      }
+      else //user is NOT already logged-in
+          {
+        Navigator.push(context, MaterialPageRoute(builder: (c)=> AuthScreen()));
+      }
     });
   }
 

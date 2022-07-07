@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:try_my_meal_user/authScreens/auth_screen.dart';
-import 'package:try_my_meal_user/mainScreens/home_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:try_my_meal_user/global/global.dart';
 import 'package:try_my_meal_user/splashScreen/my_splash_screen.dart';
 
-void main() {
+Future<void> main()  async
+{
+  WidgetsFlutterBinding.ensureInitialized();
+
+  sharedPreferences = await SharedPreferences.getInstance();
+
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 
@@ -19,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
       ),
       debugShowCheckedModeBanner: false,
-      home: AuthScreen(),
+      home: MySplashScreen(),
     );
   }
 }

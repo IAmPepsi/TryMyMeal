@@ -1,4 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:try_my_meal_user/authScreens/auth_screen.dart';
+import 'package:try_my_meal_user/global/global.dart';
+import 'package:try_my_meal_user/splashScreen/my_splash_screen.dart';
 
 
 class MyDrawer extends StatefulWidget
@@ -25,12 +29,12 @@ class _MyDrawerState extends State<MyDrawer>
             child: Column(
               children: [
                 //user profile image
-                Container(
+                SizedBox(
                   height: 130,
                   width: 130,
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(
-                        "https://images.unsplash.com/photo-1446707052533-0e1d48e08aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dHJlc3N8ZW58MHx8MHx8&w=1000&q=80"
+                      sharedPreferences!.getString("photoUrl")!,
                     ),
                   ),
                 ),
@@ -39,8 +43,8 @@ class _MyDrawerState extends State<MyDrawer>
 
                 //user name
                 Text(
-                  "user Name",
-                  style: TextStyle(
+                  sharedPreferences!.getString("name")!,
+                  style: const TextStyle(
                     color: Colors.grey,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -164,7 +168,8 @@ class _MyDrawerState extends State<MyDrawer>
                   ),
                   onTap: ()
                   {
-
+                    FirebaseAuth.instance.signOut();
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> MySplashScreen()));
                   },
                 ),
                 const Divider(
