@@ -1,6 +1,9 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:try_my_meal_user/models/address.dart';
 
+import '../ratingScreen/rate_chef_screen.dart';
 import '../splashScreen/my_splash_screen.dart';
 
 
@@ -121,12 +124,38 @@ class AddressDesign extends StatelessWidget
             }
             else if(orderStatus == "shifted")
             {
-              //implement Parcel Delivered & Received feature
-            }
+              //implement Parcel Received feature
+              FirebaseFirestore.instance
+                  .collection("orders")
+                  .doc(orderId)
+                  .update(
+                  {
+                    "status": "ended",
+                  }).whenComplete(()
+              {
+                FirebaseFirestore.instance
+                    .collection("users")
+                    .doc(orderByUser)
+                    .collection("orders")
+                    .doc(orderId)
+                    .update(
+                    {
+                      "status": "ended",
+                    });
+
+                //send notification to chef
+
+                Fluttertoast.showToast(msg: "Confirmed Successfully.");
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MySplashScreen()));
+              });            }
             else if(orderStatus == "ended")
             {
-              //implement Rate this Chef feature
+              //implement Rate this chef feature
+              Navigator.push(context, MaterialPageRoute(builder: (context) => RateChefScreen(
+                chefId: chefId,
+              )));
             }
+
             else
             {
               Navigator.push(context, MaterialPageRoute(builder: (context) => MySplashScreen()));

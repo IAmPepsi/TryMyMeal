@@ -6,6 +6,9 @@ import 'package:try_my_meal_user/ordersScreens/orders_screen.dart';
 import 'package:try_my_meal_user/chefsScreens/home_screen.dart';
 import 'package:try_my_meal_user/splashScreen/my_splash_screen.dart';
 
+import '../NotYetReceivedParcels/not_yet_received_parcels_screen.dart';
+import '../history/history_screen.dart';
+
 
 class MyDrawer extends StatefulWidget
 {
@@ -116,7 +119,7 @@ class _MyDrawerState extends State<MyDrawer>
                   ),
                   onTap: ()
                   {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> NotYetReceivedParcelsScreen()));
                   },
                 ),
                 const Divider(
@@ -134,7 +137,7 @@ class _MyDrawerState extends State<MyDrawer>
                   ),
                   onTap: ()
                   {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> HistoryScreen()));
                   },
                 ),
                 const Divider(
