@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:try_my_meal_user/assistantMethods/address_changer.dart';
 import 'package:try_my_meal_user/models/address.dart';
+import 'package:try_my_meal_user/placeOrderScreen/place_order_screen.dart';
 
 
 class AddressDesignWidget extends StatefulWidget
@@ -159,11 +160,16 @@ class _AddressDesignWidgetState extends State<AddressDesignWidget>
             child: ElevatedButton(
               child: const Text("Proceed"),
               style: ElevatedButton.styleFrom(
-                primary: Colors.green,
+                primary: Colors.purpleAccent,
               ),
               onPressed: ()
               {
                 //send user to Place Order Screen finally
+                Navigator.push(context, MaterialPageRoute(builder: (c)=> PlaceOrderScreen(
+                  addressID: widget.addressID,
+                  totalAmount: widget.totalAmount,
+                  chefUID: widget.chefUID,
+                )));
               },
             ),
           )

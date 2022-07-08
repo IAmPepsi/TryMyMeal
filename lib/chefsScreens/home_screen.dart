@@ -18,7 +18,7 @@ class HomeScreen extends StatefulWidget
 class _HomeScreenState extends State<HomeScreen>
 {
   @override
-  void initState(){
+  void initState() {
     super.initState();
 
     cartMethods.clearCart(context);

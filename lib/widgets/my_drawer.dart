@@ -2,6 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:try_my_meal_user/authScreens/auth_screen.dart';
 import 'package:try_my_meal_user/global/global.dart';
+import 'package:try_my_meal_user/ordersScreens/orders_screen.dart';
+import 'package:try_my_meal_user/chefsScreens/home_screen.dart';
 import 'package:try_my_meal_user/splashScreen/my_splash_screen.dart';
 
 
@@ -78,7 +80,7 @@ class _MyDrawerState extends State<MyDrawer>
                   ),
                   onTap: ()
                   {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> HomeScreen()));
                   },
                 ),
                 const Divider(
@@ -96,7 +98,7 @@ class _MyDrawerState extends State<MyDrawer>
                   ),
                   onTap: ()
                   {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> OrdersScreen()));
                   },
                 ),
                 const Divider(

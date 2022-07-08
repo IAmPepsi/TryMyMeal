@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:try_my_meal_user/models/chefs.dart';
 import 'package:try_my_meal_user/widgets/text_delegate_header_widget.dart';
-import '../models/chefs.dart';
 import '../models/meals.dart';
 import '../widgets/my_drawer.dart';
 import 'meals_ui_design_widget.dart';

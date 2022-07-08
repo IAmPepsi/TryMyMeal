@@ -6,7 +6,6 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:try_my_meal_user/global/global.dart';
-import 'package:try_my_meal_user/chefsScreens/home_screen.dart';
 import 'package:try_my_meal_user/splashScreen/my_splash_screen.dart';
 import 'package:try_my_meal_user/widgets/custom_text_field.dart';
 import 'package:firebase_storage/firebase_storage.dart' as fStorage;

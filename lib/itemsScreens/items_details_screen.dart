@@ -81,6 +81,9 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
                 child: CartStepperInt(
                   count: counterLimit,
                   size: 50,
+                  deActiveBackgroundColor: Colors.red,
+                  activeForegroundColor: Colors.white,
+                  activeBackgroundColor: Colors.pinkAccent,
                   didChangeCount: (value)
                   {
                     if(value < 1)

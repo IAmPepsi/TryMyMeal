@@ -37,6 +37,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen>
           "orderTime": orderId,
           "orderId": orderId,
           "isSuccess": true,
+          "chefUID": widget.chefUID,
           "status": "normal",
         }).whenComplete(()
     {
@@ -50,6 +51,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen>
             "orderTime": orderId,
             "orderId": orderId,
             "isSuccess": true,
+            "chefUID": widget.chefUID,
             "status": "normal",
           }).whenComplete(()
       {
