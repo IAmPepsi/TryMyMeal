@@ -25,7 +25,7 @@ class _MealsScreenState extends State<MealsScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       drawer: MyDrawer(),
       appBar: AppBar(
         flexibleSpace: Container(
@@ -33,8 +33,8 @@ class _MealsScreenState extends State<MealsScreen>
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.red,
+                  Colors.orange,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),
@@ -44,7 +44,7 @@ class _MealsScreenState extends State<MealsScreen>
           ),
         ),
         title: const Text(
-          "iShop",
+          "Try My Meal",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,

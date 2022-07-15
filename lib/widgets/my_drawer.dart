@@ -164,6 +164,41 @@ class _MyDrawerState extends State<MyDrawer>
                   thickness: 2,
                 ),
 
+                ListTile(
+                  leading: const Icon(Icons.chat, color: Colors.grey,),
+                  title: const Text(
+                    "Chat",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                  onTap: ()
+                  {
+
+                  },
+                ),
+                const Divider(
+                  height: 10,
+                  color: Colors.grey,
+                  thickness: 2,
+                ),
+
+
+                ListTile(
+                  leading: const Icon(Icons.help_center, color: Colors.grey,),
+                  title: const Text(
+                    "Help Center",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                  onTap: ()
+                  {
+
+                  },
+                ),
+                const Divider(
+                  height: 10,
+                  color: Colors.grey,
+                  thickness: 2,
+                ),
+
                 //logout
                 ListTile(
                   leading: const Icon(Icons.exit_to_app, color: Colors.grey,),

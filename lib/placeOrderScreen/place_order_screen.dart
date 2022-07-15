@@ -90,7 +90,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.orange,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -105,7 +105,7 @@ class _PlaceOrderScreenState extends State<PlaceOrderScreen>
               orderDetails();
             },
             style: ElevatedButton.styleFrom(
-              primary: Colors.green,
+              primary: Colors.deepOrange,
             ),
             child: const Text(
                 "Place Order Now"

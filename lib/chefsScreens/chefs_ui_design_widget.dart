@@ -31,9 +31,9 @@ class _ChefsUIDesignWidgetState extends State<ChefsUIDesignWidget>
         )));
       },
       child: Card(
-        color: Colors.black54,
+        color: Colors.white,
         elevation: 20,
-        shadowColor: Colors.grey,
+        shadowColor: Colors.white,
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: SizedBox(
@@ -56,7 +56,7 @@ class _ChefsUIDesignWidgetState extends State<ChefsUIDesignWidget>
                 Text(
                   widget.model!.name.toString(),
                   style: const TextStyle(
-                    color: Colors.pinkAccent,
+                    color: Colors.red,
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                   ),
@@ -65,8 +65,8 @@ class _ChefsUIDesignWidgetState extends State<ChefsUIDesignWidget>
                 SmoothStarRating(
                   rating: widget.model!.ratings == null ? 0.0 : double.parse(widget.model!.ratings.toString()),
                   starCount: 5,
-                  color: Colors.pinkAccent,
-                  borderColor: Colors.pinkAccent,
+                  color: Colors.red,
+                  borderColor: Colors.red,
                   size: 16,
                 ),
 

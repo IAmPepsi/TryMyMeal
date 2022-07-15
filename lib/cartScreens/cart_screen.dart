@@ -41,7 +41,7 @@ class _CartScreenState extends State<CartScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBarWithCartBadge(),
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -91,7 +91,7 @@ class _CartScreenState extends State<CartScreen>
 
           SliverToBoxAdapter(
             child: Container(
-              color: Colors.black54,
+              color: Colors.white,
               child: Consumer2<TotalAmount, CartItemCounter>(builder: (context, amountProvider, cartProvider, c)
               {
                 return Padding(
@@ -102,7 +102,7 @@ class _CartScreenState extends State<CartScreen>
                         : Text(
                       "Total Price: " + amountProvider.tAmount.toString(),
                       style: const TextStyle(
-                        color: Colors.white,
+                        color: Colors.deepOrange,
                         letterSpacing: 2,
                         fontWeight: FontWeight.bold,
                         fontSize: 22,

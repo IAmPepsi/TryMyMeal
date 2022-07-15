@@ -28,7 +28,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: FutureBuilder(
           future: FirebaseFirestore.instance
@@ -60,7 +60,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                       child: Text(
                         "€ " + orderDataMap["totalAmount"].toString(),
                         style: const TextStyle(
-                          color: Colors.grey,
+                          color: Colors.red,
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
                         ),
@@ -75,7 +75,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                       child: Text(
                         "Order ID = " + orderDataMap["orderId"].toString(),
                         style: const TextStyle(
-                          color: Colors.grey,
+                          color: Colors.black,
                           fontSize: 16,
                         ),
                       ),
@@ -90,7 +90,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                         "Order at = " + DateFormat("dd MMMM, yyyy - hh:mm aa")
                             .format(DateTime.fromMillisecondsSinceEpoch(int.parse(orderDataMap["orderTime"]))),
                         style: const TextStyle(
-                          color: Colors.grey,
+                          color: Colors.black,
                           fontSize: 16,
                         ),
                       ),
@@ -99,7 +99,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
 
                   const Divider(
                     thickness: 1,
-                    color: Colors.pinkAccent,
+                    color: Colors.red,
                   ),
 
                   orderStatus == "ended"
@@ -108,7 +108,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
 
                   const Divider(
                     thickness: 1,
-                    color: Colors.pinkAccent,
+                    color: Colors.red,
                   ),
 
                   FutureBuilder(

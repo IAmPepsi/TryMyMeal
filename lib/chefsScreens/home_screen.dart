@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       drawer: MyDrawer(),
       appBar: AppBar(
         flexibleSpace: Container(
@@ -36,8 +36,8 @@ class _HomeScreenState extends State<HomeScreen>
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.red,
+                  Colors.orange,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),
@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
         title: const Text(
-          "iShop",
+          "Try My Meal",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,

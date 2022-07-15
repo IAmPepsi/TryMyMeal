@@ -24,8 +24,8 @@ class _AuthScreenState extends State<AuthScreen>
                 gradient: LinearGradient(
                   colors:
                   [
-                    Colors.pinkAccent,
-                    Colors.purpleAccent,
+                    Colors.red,
+                    Colors.orange,
                   ],
                   begin: FractionalOffset(0.0, 0.0),
                   end: FractionalOffset(1.0, 0.0),
@@ -35,7 +35,7 @@ class _AuthScreenState extends State<AuthScreen>
             ),
           ),
           title: const Text(
-            "iShop",
+            "Try My Meal",
             style: TextStyle(
               fontSize: 30,
               letterSpacing: 3,
@@ -69,8 +69,8 @@ class _AuthScreenState extends State<AuthScreen>
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.red,
+                  Colors.orange,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),

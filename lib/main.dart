@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Users App',
         theme: ThemeData(
-          primarySwatch: Colors.purple,
+          primarySwatch: Colors.deepOrange,
         ),
         debugShowCheckedModeBanner: false,
         home: MySplashScreen(),

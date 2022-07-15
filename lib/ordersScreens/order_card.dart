@@ -34,7 +34,7 @@ class _OrderCardState extends State<OrderCard>
         )));
       },
       child: Card(
-        color: Colors.black,
+        color: Colors.white,
         elevation: 10,
         shadowColor: Colors.white54,
         child: Container(
@@ -109,7 +109,7 @@ Widget placedOrdersItemsDesignWidget(Items items, BuildContext context, itemQuan
                     const Text(
                       "€ ",
                       style: TextStyle(
-                        color: Colors.purpleAccent,
+                        color: Colors.orange,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
@@ -118,7 +118,7 @@ Widget placedOrdersItemsDesignWidget(Items items, BuildContext context, itemQuan
                     Text(
                       items.price.toString(),
                       style: const TextStyle(
-                        color: Colors.purpleAccent,
+                        color: Colors.orange,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),

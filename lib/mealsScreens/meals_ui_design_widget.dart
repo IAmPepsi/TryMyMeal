@@ -34,7 +34,7 @@ class _MealsUiDesignWidgetState extends State<MealsUiDesignWidget>
         )));
       },
       child: Card(
-        color: Colors.black,
+        color: Colors.white,
         elevation: 10,
         shadowColor: Colors.grey,
         child: Padding(
@@ -59,7 +59,7 @@ class _MealsUiDesignWidgetState extends State<MealsUiDesignWidget>
                 Text(
                   widget.model!.mealTitle.toString(),
                   style: const TextStyle(
-                    color: Colors.deepPurple,
+                    color: Colors.deepOrange,
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                     letterSpacing: 3,

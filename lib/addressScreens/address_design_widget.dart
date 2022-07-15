@@ -44,7 +44,7 @@ class _AddressDesignWidgetState extends State<AddressDesignWidget>
               Radio(
                 groupValue: widget.index,
                 value: widget.value!,
-                activeColor: Colors.pink,
+                activeColor: Colors.deepOrange,
                 onChanged: (val)
                 {
                   //provider
@@ -160,7 +160,7 @@ class _AddressDesignWidgetState extends State<AddressDesignWidget>
             child: ElevatedButton(
               child: const Text("Proceed"),
               style: ElevatedButton.styleFrom(
-                primary: Colors.purpleAccent,
+                primary: Colors.deepOrange,
               ),
               onPressed: ()
               {

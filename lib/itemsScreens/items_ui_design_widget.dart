@@ -32,7 +32,7 @@ class _ItemsUiDesignWidgetState extends State<ItemsUiDesignWidget>
         )));
       },
       child: Card(
-        color: Colors.black,
+        color: Colors.white,
         elevation: 10,
         shadowColor: Colors.grey,
         child: Padding(
@@ -57,7 +57,7 @@ class _ItemsUiDesignWidgetState extends State<ItemsUiDesignWidget>
                 Text(
                   widget.model!.itemTitle.toString(),
                   style: const TextStyle(
-                    color: Colors.deepPurple,
+                    color: Colors.deepOrange,
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                     letterSpacing: 3,

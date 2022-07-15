@@ -25,8 +25,8 @@ class StatusBanner extends StatelessWidget
           gradient: LinearGradient(
             colors:
             [
-              Colors.pinkAccent,
-              Colors.purpleAccent,
+              Colors.red,
+              Colors.orange,
             ],
             begin: FractionalOffset(0.0, 0.0),
             end: FractionalOffset(1.0, 0.0),
@@ -45,12 +45,12 @@ class StatusBanner extends StatelessWidget
               Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
             },
             child: const Icon(
-              Icons.arrow_back,
-              color: Colors.black,
+              Icons.transit_enterexit,
+              color: Colors.white,
             ),
           ),
 
-          const SizedBox(width: 30,),
+          const SizedBox(width: 40,),
 
           Text(
             orderStatus == "ended"
@@ -60,23 +60,8 @@ class StatusBanner extends StatelessWidget
                 : orderStatus == "normal"
                 ? "Order Placed $message"
                 : "",
-            style: const TextStyle(color: Colors.black, fontSize: 16),
+            style: const TextStyle(color: Colors.white, fontSize: 16),
           ),
-
-          const SizedBox(width: 6,),
-
-          CircleAvatar(
-            radius: 10,
-            backgroundColor: Colors.black,
-            child: Center(
-              child: Icon(
-                iconData,
-                color: Colors.white,
-                size: 16,
-              ),
-            ),
-          ),
-
         ],
       ),
     );

@@ -31,15 +31,15 @@ class _SaveNewAddressScreenState extends State<SaveNewAddressScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         flexibleSpace: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.red,
+                  Colors.orange,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),
@@ -49,7 +49,7 @@ class _SaveNewAddressScreenState extends State<SaveNewAddressScreen>
           ),
         ),
         title: const Text(
-          "iShop",
+          "Try My Meal",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -103,7 +103,7 @@ class _SaveNewAddressScreenState extends State<SaveNewAddressScreen>
               child: Text(
                 "Save New Address:",
                 style: TextStyle(
-                  color: Colors.grey,
+                  color: Colors.deepOrange,
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
                 ),

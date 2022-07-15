@@ -26,15 +26,15 @@ class _ItemsScreenState extends State<ItemsScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         flexibleSpace: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.red,
+                  Colors.orange,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),
@@ -44,7 +44,7 @@ class _ItemsScreenState extends State<ItemsScreen>
           ),
         ),
         title: const Text(
-          "iShop",
+          "Try My Meal",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,

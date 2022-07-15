@@ -30,7 +30,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       appBar: AppBarWithCartBadge(
         chefUID: widget.model!.chefUID.toString(),
       ),
@@ -63,7 +63,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
           Icons.add_shopping_cart_rounded,
           color: Colors.white,
         ),
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.red,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -105,7 +105,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
-                  color: Colors.pinkAccent,
+                  color: Colors.red,
                 ),
               ),
             ),
@@ -131,7 +131,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
                 style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
-                  color: Colors.pink,
+                  color: Colors.redAccent,
                 ),
               ),
             ),
@@ -141,7 +141,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
               child: Divider(
                 height: 1,
                 thickness: 2,
-                color: Colors.pinkAccent,
+                color: Colors.red,
               ),
             ),
 

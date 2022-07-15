@@ -22,8 +22,8 @@ class _CartItemDesignWidgetState extends State<CartItemDesignWidget>
   Widget build(BuildContext context)
   {
     return Card(
-      color: Colors.black,
-      shadowColor: Colors.white54,
+      color: Colors.white,
+      shadowColor: Colors.black,
       elevation: 10,
       child: Padding(
         padding: const EdgeInsets.all(6.0),
@@ -53,7 +53,7 @@ class _CartItemDesignWidgetState extends State<CartItemDesignWidget>
                     Text(
                       widget.model!.itemTitle.toString(),
                       style: const TextStyle(
-                        color: Colors.grey,
+                        color: Colors.deepOrange,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
@@ -68,7 +68,7 @@ class _CartItemDesignWidgetState extends State<CartItemDesignWidget>
                         const Text(
                           "Price: ",
                           style: TextStyle(
-                            color: Colors.white54,
+                            color: Colors.deepOrange,
                             fontSize: 15,
                           ),
                         ),
@@ -76,7 +76,7 @@ class _CartItemDesignWidgetState extends State<CartItemDesignWidget>
                         const Text(
                           "€ ",
                           style: TextStyle(
-                            color: Colors.purpleAccent,
+                            color: Colors.deepOrange,
                             fontSize: 18,
                           ),
                         ),
@@ -84,7 +84,7 @@ class _CartItemDesignWidgetState extends State<CartItemDesignWidget>
                         Text(
                           widget.model!.price.toString(),
                           style: const TextStyle(
-                            color: Colors.grey,
+                            color: Colors.deepOrange,
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
@@ -102,7 +102,7 @@ class _CartItemDesignWidgetState extends State<CartItemDesignWidget>
                         const Text(
                           "Quantity: ",
                           style: TextStyle(
-                            color: Colors.white54,
+                            color: Colors.deepOrange,
                             fontSize: 18,
                           ),
                         ),
@@ -110,7 +110,7 @@ class _CartItemDesignWidgetState extends State<CartItemDesignWidget>
                         Text(
                           widget.quantityNumber.toString(),
                           style: const TextStyle(
-                            color: Colors.grey,
+                            color: Colors.deepOrange,
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
                           ),

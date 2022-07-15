@@ -35,8 +35,8 @@ class _AppBarWithCartBadgeState extends State<AppBarWithCartBadge>
             gradient: LinearGradient(
               colors:
               [
-                Colors.pinkAccent,
-                Colors.purpleAccent,
+                Colors.red,
+                Colors.orange,
               ],
               begin: FractionalOffset(0.0, 0.0),
               end: FractionalOffset(1.0, 0.0),
@@ -47,7 +47,7 @@ class _AppBarWithCartBadgeState extends State<AppBarWithCartBadge>
       ),
       automaticallyImplyLeading: true,
       title: const Text(
-        "iShop",
+        "Try My Meals",
         style: TextStyle(
           fontSize: 20,
           letterSpacing: 3,
@@ -85,7 +85,7 @@ class _AppBarWithCartBadgeState extends State<AppBarWithCartBadge>
                   const Icon(
                     Icons.brightness_1,
                     size: 20,
-                    color: Colors.deepPurpleAccent,
+                    color: Colors.deepOrangeAccent,
                   ),
 
                   Positioned(

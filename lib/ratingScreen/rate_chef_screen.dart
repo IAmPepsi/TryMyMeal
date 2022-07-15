@@ -25,9 +25,9 @@ class _RateChefScreenState extends State<RateChefScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.orange,
       body: Dialog(
-        backgroundColor: Colors.white60,
+        backgroundColor: Colors.red,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
@@ -35,7 +35,7 @@ class _RateChefScreenState extends State<RateChefScreen>
           margin: const EdgeInsets.all(8),
           width: double.infinity,
           decoration: BoxDecoration(
-            color: Colors.white54,
+            color: Colors.white,
             borderRadius: BorderRadius.circular(6),
           ),
           child: Column(
@@ -66,8 +66,8 @@ class _RateChefScreenState extends State<RateChefScreen>
                 rating: countStarsRating,
                 allowHalfRating: true,
                 starCount: 5,
-                color: Colors.purpleAccent,
-                borderColor: Colors.purpleAccent,
+                color: Colors.red,
+                borderColor: Colors.red,
                 size: 46,
                 onRatingChanged: (valueOfStarsChoosed)
                 {
@@ -113,7 +113,7 @@ class _RateChefScreenState extends State<RateChefScreen>
                 style: const TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
-                  color: Colors.purpleAccent,
+                  color: Colors.red,
                 ),
               ),
 
@@ -165,7 +165,7 @@ class _RateChefScreenState extends State<RateChefScreen>
                   });
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.purpleAccent,
+                  primary: Colors.red,
                   padding: const EdgeInsets.symmetric(horizontal: 74),
                 ),
                 child: const Text(

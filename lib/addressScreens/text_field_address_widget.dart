@@ -16,12 +16,12 @@ class TextFieldAddressWidget extends StatelessWidget
       child: TextFormField(
         controller: controller,
         style: const TextStyle(
-          color: Colors.white,
+          color: Colors.black,
         ),
         decoration: InputDecoration.collapsed(
           hintText: hint,
           hintStyle: const TextStyle(
-            color: Colors.grey,
+            color: Colors.black,
           ),
         ),
         validator: (value)=> value!.isEmpty ? "Field can not be Empty." : null,

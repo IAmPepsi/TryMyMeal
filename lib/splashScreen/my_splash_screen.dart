@@ -49,8 +49,10 @@ class _MySplashScreenState extends State<MySplashScreen>
             gradient: LinearGradient(
               colors:
               [
-                Colors.pinkAccent,
-                Colors.purpleAccent,
+                Colors.red,
+                Colors.orange,
+              //  Colors.pinkAccent,
+              //  Colors.purpleAccent,
               ],
               begin: FractionalOffset(0.0, 0.0),
               end: FractionalOffset(1.0, 0.0),
@@ -74,7 +76,7 @@ class _MySplashScreenState extends State<MySplashScreen>
               const SizedBox(height: 10,),
 
               const Text(
-                "iShop Users App",
+                "Try My Meal",
                 style: TextStyle(
                   fontSize: 30,
                   letterSpacing: 3,
